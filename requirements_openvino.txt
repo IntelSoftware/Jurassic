@@ -1,2 +1,4 @@
-opencv-python
+openvino-dev[pytorch]
 seaborn
+jupyterlab
+ipywidgets
