@@ -18,6 +18,6 @@
 
 
 ## Dependencies ##
-jupyterlab
-ipywidgets
-openvino-dev[pytorch]
+jupyterlab==3.4.*
+ipywidgets==7.7.*
+openvino-dev[pytorch]==2022.1.0
