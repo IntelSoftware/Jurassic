@@ -18,7 +18,6 @@
 
 
 ## Dependencies ##
-wheel
 jupyterlab
 ipywidgets
 openvino-dev[pytorch]
