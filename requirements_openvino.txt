@@ -1,4 +1,24 @@
-openvino-dev[pytorch]
-seaborn
+######################
+#Install for Windows #
+######################
+#python -m venv openvino_env
+#.\openvino_env\Scripts\activate
+#python -m pip install -U pip setuptools wheel
+#pip install -r .\requirements_openvino.txt
+
+
+
+###########################
+#Install for Linux/Mac OS #
+###########################
+#python -m venv openvino_env
+#./openvino_env/bin/activate
+#python -m pip install -U pip setuptools wheel
+#pip install -r .\requirements_openvino.txt
+
+
+## Dependencies ##
+wheel
 jupyterlab
 ipywidgets
+openvino-dev[pytorch]
