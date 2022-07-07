@@ -1,19 +1,27 @@
 # Jurassic
 
 ## Preparation steps:
+
+### Clone the repository
+First, we download all the code and some of the pre-trained samples models and dataset from Github. 
 ```
-mkdir Jurassic
-cd Jurassic
+mkdir Jurassic_Demo
+cd Jurassic_Demo
 pip install -r requirements.txt
 git clone https://github.com/IntelSoftware/Jurassic.git
 ```
-### For laptop
+
+### Download the Training Dataset
+This will download the training dataset. This is required! 
+#### For Local Machine 
 ```
+cd Jurassic
 wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0
 unzip data.zip
 ```
-### On DevCloud:   
+#### On DevCloud:   
 ```
+cd Jurassic
 cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
 tar zxvf jurassic.tar.gz; mv jurassic Data
 ```
@@ -44,4 +52,12 @@ python -m venv openvino_env
 python -m pip install -U pip setuptools wheel
 pip install -r requirements_openvino.txt
 jupyter lab . 
+```
+
+### How to run
+You can start jupyter lab either on DevCloud, or execute the following in the terminal (after installations) locally.
+
+```
+cd Jurassic
+jupyter lab .
 ```
