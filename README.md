@@ -40,7 +40,6 @@ python -m venv openvino_env
 .\openvino_env\Scripts\activate
 python -m pip install -U pip setuptools wheel
 pip install -r requirements_openvino.txt
-jupyter lab . 
 ```
 
 
@@ -51,7 +50,6 @@ python -m venv openvino_env
 ./openvino_env/bin/activate
 python -m pip install -U pip setuptools wheel
 pip install -r requirements_openvino.txt
-jupyter lab . 
 ```
 
 ### How to run
