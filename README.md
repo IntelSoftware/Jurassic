@@ -3,7 +3,7 @@
 ## Preparation steps:
 
 ### Clone the repository
-First, we download all the code and some of the pre-trained samples models and dataset from Github. 
+First, we download all the code and some of the pre-trained sample models and dataset from Github. 
 ```
 mkdir Jurassic_Demo
 cd Jurassic_Demo
@@ -12,8 +12,9 @@ git clone https://github.com/IntelSoftware/Jurassic.git
 ```
 
 ### Download the Training Dataset
-This will download the training dataset. This is required! 
-#### For Local Machine 
+This will download the training dataset. This is required to run the training and more! 
+
+#### On Local Machine 
 ```
 cd Jurassic
 wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0
@@ -33,7 +34,6 @@ pre-requisites and requirements. We recommend Python 3.7 on Windows for quick se
 This installation step install OpenVINO 2022.1 with PyTorch, and Jupyter Lab. Please ensure you use the virtual environment to avoid dependencies conflicts. 
 
 On Windows
-
 ```
 cd Jurassic
 python -m venv openvino_env
