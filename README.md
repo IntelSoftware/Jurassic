@@ -5,10 +5,11 @@
 ### Clone the repository
 First, we download all the code and some of the pre-trained sample models and dataset from Github. 
 ```
-mkdir Jurassic_Demo
-cd Jurassic_Demo
-pip install -r requirements.txt
+mkdir JurassicDemo
+cd JurassicDemo
 git clone https://github.com/IntelSoftware/Jurassic.git
+cd Jurassic
+pip install -r requirements.txt
 ```
 
 ### Download the Training Dataset
@@ -16,15 +17,13 @@ This will download the training dataset. This is required to run the training an
 
 #### On Local Machine 
 ```
-cd Jurassic
 wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0
 unzip data.zip
 ```
 #### On DevCloud:   
 ```
-cd Jurassic
 cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
-tar zxvf jurassic.tar.gz; mv jurassic Data
+tar zxvf jurassic.tar.gz; mv jurassic data
 ```
 
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
