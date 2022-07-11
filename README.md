@@ -23,7 +23,7 @@ unzip data.zip
 #### On DevCloud:   
 ```
 cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
-tar zxvf jurassic.tar.gz; mv jurassic data
+tar zxvf jurassic.tar.gz; mv Jurassic data
 ```
 
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
