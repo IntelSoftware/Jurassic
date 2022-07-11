@@ -26,6 +26,8 @@ cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
 tar zxvf jurassic.tar.gz; mv Jurassic data
 ```
 
+# Please complete the two exercises (units 2 and 7) and feel free to take unit 9 using OpenVINO as a homework exercise!
+
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
 Please see [Installation Guide](https://github.com/openvinotoolkit/openvino_notebooks#-installation-guide) for OpenVINO 
 pre-requisites and requirements. We recommend Python 3.7 on Windows for quick setup. On Linux, please do follow the (Linux GPU Driver Installation)[https://github.com/openvinotoolkit/openvino_notebooks/discussions/540] to ensure your system will work with iGPU. 
