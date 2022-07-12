@@ -9,7 +9,6 @@ mkdir JurassicDemo
 cd JurassicDemo
 git clone https://github.com/IntelSoftware/Jurassic.git
 cd Jurassic
-pip install -r requirements.txt
 ```
 
 ### Download the Training Dataset
