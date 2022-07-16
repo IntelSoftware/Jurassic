@@ -7,6 +7,8 @@ First, we download all the code and some of the pre-trained sample models and da
 ```
 mkdir JurassicDemo
 cd JurassicDemo
+source /glob/development-tools/versions/oneapi/2022.2/oneapi/setvars.sh --force
+conda activate base
 git clone https://github.com/IntelSoftware/Jurassic.git
 cd Jurassic
 pip install -r requirements.txt
