@@ -28,7 +28,7 @@ cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
 tar zxvf jurassic.tar.gz; mv Jurassic data
 ```
 
-# Please complete the two exercises (units 2 and 7) and feel free to take unit 9 using OpenVINO as a homework exercise!
+# Please complete the two exercise units 2  and feel free to take unit 7 training a pytorch resnet 18 model and unit 9 using OpenVINO as a homework exercise!
 
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
 Please see [Installation Guide](https://github.com/openvinotoolkit/openvino_notebooks#-installation-guide) for OpenVINO 
@@ -36,7 +36,16 @@ pre-requisites and requirements. We recommend Python 3.7 on Windows for quick se
 
 This installation step install OpenVINO 2022.1 with PyTorch, and Jupyter Lab. Please ensure you use the virtual environment to avoid dependencies conflicts. 
 
-On Windows
+#### OpenVINO on DevCloud:   
+```bash
+conda create --clone pytorch --name openvinopytorch
+conda activate openvinopytorch
+~/.conda/envs/openvinopytorch/bin/pip install --user openvino-dev[pytorch]
+python -m ipykernel install --user --name openvinopytorch
+pip install -r requirements_openvino.txt
+```
+
+#### OpenVINO on  Windows
 ```
 cd Jurassic
 python -m venv openvino_env
@@ -46,10 +55,12 @@ pip install -r requirements_openvino.txt
 ```
 
 
-On Linux or Mac OS 
-```
+
+#### OpenVINO on  Linux or Mac OS 
+```bash
 cd Jurassic
 python -m venv openvino_env
+chmod -R 777 openvino_env/
 ./openvino_env/bin/activate
 python -m pip install -U pip setuptools wheel
 pip install -r requirements_openvino.txt
