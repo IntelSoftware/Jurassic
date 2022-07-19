@@ -1,6 +1,6 @@
 # Jurassic
 
-## Preparation steps:
+## Preparation steps units 00 to 08:
 
 ### Clone the repository
 First, we download all the code and some of the pre-trained sample models and dataset from Github. 
@@ -29,6 +29,8 @@ tar zxvf jurassic.tar.gz; mv Jurassic data
 ```
 
 # Please complete the two exercise units 2  and feel free to take unit 7 training a pytorch resnet 18 model and unit 9 using OpenVINO as a homework exercise!
+
+## Preparation steps units 09:
 
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
 Please see [Installation Guide](https://github.com/openvinotoolkit/openvino_notebooks#-installation-guide) for OpenVINO 
