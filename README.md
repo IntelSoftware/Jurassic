@@ -28,7 +28,7 @@ cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
 tar zxvf jurassic.tar.gz; mv Jurassic data
 ```
 
-# Please complete the two exercise units 2  and feel free to take unit 7 training a pytorch resnet 18 model and unit 9 using OpenVINO as a homework exercise!
+# Please complete the two learning units 2 (tabular clustering and classification) and 7 (PyTroch version of resnet18). Feel free to take unit 9 (accelerating inference) using OpenVINO as a homework exercise for the sake of time!
 
 ## Preparation steps units 09:
 
