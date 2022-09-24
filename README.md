@@ -19,8 +19,7 @@ This will download the training dataset. This is required to run the training an
 
 #### On Local Machine 
 ```
-wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0"
-unzip data.zip
+wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0" && unzip data.zip
 ```
 #### On DevCloud:   
 ```
