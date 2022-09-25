@@ -16,4 +16,4 @@ echo "register new kernel in Jupyter"
 python -m ipykernel install --user --name openvinopytorch2
 echo "install OpenVINO lan requirements"
 pip install -r requirements_openvino.txt
-conda activate openvinopytorch2
+conda activate base
