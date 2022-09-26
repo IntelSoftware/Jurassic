@@ -25,7 +25,8 @@ This will download the training dataset. This is required to run the training an
 ```
 cd Jurassic
 wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip" && unzip data.zip
-wget -O models.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/models.zip" && unzip models.zip
+wget -O models.zip "https://www.dropbox.com/s/tj8j6infag4sfcf/models.zip" && unzip models.zip
+
 unzip data.zip
 unzip models.zip
 ```
