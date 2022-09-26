@@ -11,14 +11,14 @@ echo "Setting conda environment"
 source /glob/development-tools/versions/oneapi/2022.2/oneapi/setvars.sh --force
 conda activate base
 pip install -r requirements.txt
-# echo "creating new environment"
-# conda create --clone pytorch --name openvinopytorch2
-# echo "Activating environment"
-# conda activate openvinopytorch2
-# echo "Instalingl openvino-dev"
-# ~/.conda/envs/openvinopytorch/bin/pip install --user openvino-dev[pytorch]
-# echo "Registering new kernel in Jupyter"
-# python -m ipykernel install --user --name openvinopytorch2
-# echo "Installing OpenVINO lan requirements"
-# pip install -r requirements_openvino.txt
+echo "creating new environment"
+conda create --clone pytorch --name openvinopytorch2
+echo "Activating environment"
+conda activate openvinopytorch2
+echo "Instalingl openvino-dev"
+~/.conda/envs/openvinopytorch/bin/pip install --user openvino-dev[pytorch]
+echo "Registering new kernel in Jupyter"
+python -m ipykernel install --user --name openvinopytorch2
+echo "Installing OpenVINO lan requirements"
+pip install -r requirements_openvino.txt
 conda activate base
