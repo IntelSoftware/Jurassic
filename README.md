@@ -7,31 +7,35 @@ First, we download all the code and some of the pre-trained sample models and da
 ```
 mkdir JurassicDemo
 cd JurassicDemo
-source /glob/development-tools/versions/oneapi/2022.2/oneapi/setvars.sh --force
-conda activate base
 git clone https://github.com/IntelSoftware/Jurassic.git
-cd Jurassic
-pip install -r requirements.txt
+
 ```
+
+#### On DevCloud:   
+```
+cd JurassicDemo/Jurassic
+. prepJurassic.sh
+```
+___
 
 ### Download the Training Dataset
 This will download the training dataset. This is required to run the training and more! 
 
 #### On Local Machine 
 ```
-wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip?dl=0" && unzip data.zip
+cd Jurassic
+wget -O data.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/data.zip" && unzip data.zip
+wget -O models.zip "https://www.dropbox.com/s/ihkbox8vqksb2ii/models.zip" && unzip models.zip
+unzip data.zip
+unzip models.zip
 ```
-#### On DevCloud:   
-```
-cp /data/oneapi_workshop/big_datasets/jurassic/jurassic.tar.gz .
-tar zxvf jurassic.tar.gz; mv Jurassic data
-```
-___
+
 **NOTE**
 Please complete the two learning units 2 (tabular clustering and classification) and 7 (PyTroch version of resnet18). Feel free to take unit 9 (accelerating inference) using OpenVINO as a homework exercise for the sake of time!
 ___
 
 ## Preparation steps units 09:
+The prepJurassic.sh contains the detailed steps for DevCloud but similar steps for local are needed to be carried out manually.
 
 ### Install OpenVINO on Local Machine (required for running exercise [#9](https://github.com/IntelSoftware/Jurassic/blob/main/09_Dino_bone_find_OpenVINO.ipynb) )
 Please see [Installation Guide](https://github.com/openvinotoolkit/openvino_notebooks#-installation-guide) for OpenVINO 
@@ -39,7 +43,10 @@ pre-requisites and requirements. We recommend Python 3.7 on Windows for quick se
 
 This installation step install OpenVINO 2022.1 with PyTorch, and Jupyter Lab. Please ensure you use the virtual environment to avoid dependencies conflicts. 
 
-#### OpenVINO on DevCloud:   
+#### OpenVINO on DevCloud: 
+
+The prepJurassic.sh has performed these steps already
+
 ```bash
 conda create --clone pytorch --name openvinopytorch
 conda activate openvinopytorch
