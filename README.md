@@ -15,6 +15,7 @@ git clone https://github.com/IntelSoftware/Jurassic.git
 ```
 cd JurassicDemo/Jurassic
 . prepJurassic.sh
+source /glob/development-tools/versions/oneapi/2022.2/oneapi/setvars.sh --force
 ```
 ___
 

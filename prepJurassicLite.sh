@@ -9,6 +9,7 @@ wget https://www.dropbox.com/s/tj8j6infag4sfcf/models.zip
 unzip -qq models.zip
 echo "Setting conda environment"
 source /glob/development-tools/versions/oneapi/2022.2/oneapi/setvars.sh --force
+python -m ipykernel install --user --name base --display-name "base"
 conda activate base
 pip install -r requirements.txt
 # echo "creating new environment"
