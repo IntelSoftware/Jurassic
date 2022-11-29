@@ -16,6 +16,8 @@ echo "creating new environment"
 conda create --clone pytorch --name openvinopytorch
 echo "Activating environment"
 conda activate openvinopytorch
+~/.conda/envs/openvinopytorch/bin/pip  install torch==1.12.0+cpu  -f https://download.pytorch.org/whl/torch_stable.html
+python -m pip install intel_extension_for_pytorch==1.12+cpu -f https://developer.intel.com/ipex-whl-stable-cpu
 echo "Instalingl openvino-dev"
 ~/.conda/envs/openvinopytorch/bin/pip install --user openvino-dev[pytorch]
 echo "Registering new kernel in Jupyter"
