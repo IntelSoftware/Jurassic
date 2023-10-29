@@ -1,3 +1,10 @@
 tqdm
 seaborn
 Pillow 
+geemap
+earthengine-api
+dask
+npm
+numba
+node
+"dask[complete]"
