@@ -7,4 +7,4 @@ dask
 npm
 numba
 node
-"dask[complete]"
+dask

@@ -2,8 +2,7 @@
 
 echo "Gathering data"
 #cp /data/oneapi_workshop/big_datasets/jurassic/*.zip .
-cp -R ~/Big_Data/jurassic/ .
-mv jurassic data
+cp -R ~/Big_Data/jurassic/ data
 #unzip -qq data.zip
 echo "Gathering Models"
 #mv models.zip models0.zip
