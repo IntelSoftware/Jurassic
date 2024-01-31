@@ -5,6 +5,7 @@ echo "Gathering data"
 cp -R ~/Big_Data/jurassic/ data
 #unzip -qq data.zip
 echo "Gathering Models"
+mkdir models
 #mv models.zip models0.zip
 #wget https://www.dropbox.com/s/tj8j6infag4sfcf/models.zip
 #unzip -qq models.zip
