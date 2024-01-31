@@ -3,7 +3,6 @@ seaborn
 Pillow 
 geemap
 earthengine-api
-dask
 npm
 numba
 node
