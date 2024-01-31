@@ -1,8 +1,8 @@
 #! /bin/bash
 
 echo "Gathering data"
-#cp /data/oneapi_workshop/big_datasets/jurassic/*.zip .
-cp -R ~/Big_Data/jurassic/ data
+cp -R ~/Big_Data/jurassic/ data/
+mv data/jurassic/data/DinosaurNationalMonument 
 echo "Gathering Models"
 mkdir models
 echo "Setting conda environment"
