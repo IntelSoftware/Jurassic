@@ -1,0 +1,1 @@
+rm -rf .cache/ .ipython/ .jupyter/ .local/
