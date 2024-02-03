@@ -11,5 +11,9 @@ git clone https://github.com/IntelSoftware/Jurassic.git
 . prepJurassic.sh
 ```
 
+### Please fill out the survey:
+
+<img src="assets/Survey.png" width="300"/>
+
 **NOTE**
 previously used notebooks have been moved to archive - these include how to acquire your data either manually or using geemap (with a Google Earth Engine account)
